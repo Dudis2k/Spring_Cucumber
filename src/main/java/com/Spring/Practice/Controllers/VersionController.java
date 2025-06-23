@@ -1,7 +1,7 @@
 package com.Spring.Practice.Controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.Spring.Practice.dto.Member;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class VersionController {
@@ -11,4 +11,11 @@ public class VersionController {
         version=version+1;
         return version;
     }
+
+//    @PostMapping("/add-member")
+//    public String addMember(@RequestBody Member member) {
+//        // Logic to add a member would go here
+//        System.out.println("%s added with status %s".formatted(member.getName(), member.getMember_status()));
+//        return "Member added successfully";
+//    }
 }
